@@ -1,0 +1,14 @@
+- vanilla js는 js가 html에 너무 의존적이다. 따라서 react 에서는 js가 html을 관리하도록 했다.
+- dom과 cssom이 다 만들어진 후 render tree가 만들어지는 것이 아님. script 만날 때처럼 블로킹 될 때 dom+cssom을 진행한다.(최적화 관점)
+- load 이벤트는 window에도 달 수 있다. 
+- 이벤트가 발생하면 이벤트 핸들러가 있는애가 있고 없는애가 있다. 
+- 이벤트가 발생한다 = 이벤트 객체를 만들어서 함수를 호출한다.
+- 이벤트 타입마다 생성자가 다르다.
+
+- button, input무엇을 써야할까?
+
+체크박스에서만 change event가 발생하므로 굳이 조건을 걸어서 걸러줄 필요가 없다.toggleTodo(e.target.nextElementSibling); 처럼 형제 노드 접근
+textDecoration: line-through 
+
+.todos>li>input[type=checkbox]:checked~span{
+text-deco~~: line-through
