@@ -24,3 +24,7 @@ num.toString(2); // 10111
 ### 객체 키값
 - Object.keys(dict);
 - key in dict
+
+### 대문자, 소문자 만들기
+- str.toUpperCase()
+- str.toLowerCase()
