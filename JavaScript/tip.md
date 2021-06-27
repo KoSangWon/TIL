@@ -28,3 +28,7 @@ num.toString(2); // 10111
 ### 대문자, 소문자 만들기
 - str.toUpperCase()
 - str.toLowerCase()
+
+### 문자열 자르기
+- string.substr(start,length)
+- subString(start, end)
