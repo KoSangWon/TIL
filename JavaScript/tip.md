@@ -32,3 +32,26 @@ num.toString(2); // 10111
 ### 문자열 자르기
 - string.substr(start,length)
 - subString(start, end)
+
+### for..in vs for..of
+- for..in: key에 접근
+```js
+var obj = {
+    a: 1, 
+    b: 2, 
+    c: 3
+};
+
+for (var prop in obj) {
+    console.log(prop, obj[prop]); // a 1, b 2, c 3
+}
+```
+- for..of: for of 반복문은 ES6에 추가된 새로운 컬렉션 전용 반복 구문입니다. for of 구문을 사용하기 위해선 컬렉션 객체가 [Symbol.iterator] 속성을 가지고 있어야만 합니다
+```js
+var iterable = [10, 20, 30];
+
+for (var value of iterable) {
+  console.log(value); // 10, 20, 30
+}
+```
+
